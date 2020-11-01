@@ -1,0 +1,85 @@
+h1,
+h2 {
+  margin: 0px 0px 30px;
+  font-size: 36px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+
+  background-color: aqua;
+}
+
+.search-form {
+  margin-bottom: 30px;
+}
+
+.search-form-input {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.result-form {
+  font-size: 24px;
+}
+
+/* Список стран */
+
+.result-form-list {
+  margin: 0;
+  text-align: left;
+}
+
+.result-form-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* Карточка страны */
+
+.result-form-card {
+  display: flex;
+}
+
+.result-form-text,
+.result-form-image {
+  flex-basis: 50%;
+}
+
+.result-form-text {
+  text-align: left;
+}
+
+.result-form-property {
+  list-style-type: none;
+}
+
+.result-form-property:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.result-form-property-name {
+  font-weight: bold;
+}
+
+.result-form-list-of-languages {
+  margin-top: 20px;
+}
+
+.result-form-languages:not(:last-child) {
+  margin-bottom: 10px;
+}

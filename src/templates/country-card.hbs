@@ -1,0 +1,22 @@
+{{#each this}}
+<h2 class="result-form-title">{{name}}</h2>
+<div class="result-form-card">
+    <div class="result-form-text">
+        <ul>
+            <li class="result-form-property"><span class="result-form-property-name">Capital:</span> {{capital}}</li>
+            <li class="result-form-property"><span class="result-form-property-name">Population:</span> {{population}}
+            </li>
+            <li class="result-form-property"><span class="result-form-property-name">Languages:</span>
+                <ul class="result-form-list-of-languages">
+                    {{#each languages}}
+                    <li class="result-form-languages">{{name}}</li>
+                    {{/each}}
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="result-form-image">
+        <img src="{{flag}}" alt="Flag of {{name}}">
+    </div>
+</div>
+{{/each}}
