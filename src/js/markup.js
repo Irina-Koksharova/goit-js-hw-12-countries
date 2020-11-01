@@ -2,6 +2,7 @@ import markupList from '../templates/countries-list.hbs';
 import markupCard from '../templates/country-card.hbs';
 import { refs } from '../index.js';
 import fetchCountries from './fetch-countries.js';
+import { myNotice, myError } from './notification.js';
 
 function renderMarkup(event) {
     const searchQuery = event.target.value;
@@ -13,11 +14,12 @@ function renderMarkup(event) {
         } else if (data.length > 1 && data.length <= 10) {
             renderCountriesListMarkup(data);
         } else if (data.length > 10) {
-            console.log('Слишком много!!!')
+            refs.resultForm.innerHTML = ''; 
+            myNotice();
         }
     })
     .catch(error => {
-        alert('Некорректный ввод!!!');
+        myError();
         refs.searchForm.value = '';
         refs.resultForm.innerHTML = ''; 
     })       

@@ -18,7 +18,7 @@ img {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .search-form {
@@ -62,6 +62,10 @@ img {
 
 .result-form-text {
   text-align: left;
+}
+
+.result-form-text-list {
+  padding-inline-start: 0;
 }
 
 .result-form-property {
